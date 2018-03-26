@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    package="ro.pub.cs.systems.eim.lab03.phonedialer"
-    tools:ignore="ExtraText">
+    package="ro.pub.cs.systems.eim.lab03.phonedialer">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
 
     <application
         android:allowBackup="true"
@@ -14,11 +14,12 @@
         <activity android:name=".PhoneDialerActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-
         </activity>
+
     </application>
 
-    <uses-permission android:name="android.permission.CALL_PHONE" />
+
 </manifest>
